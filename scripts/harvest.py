@@ -111,3 +111,22 @@ def main():
 
 if __name__ == "__main__":
     main()
+# ↑ファイル先頭のimportに追加
+from requests.adapters import HTTPAdapter
+from urllib3.util.retry import Retry
+
+def make_session():
+    s = requests.Session()
+    # Wikipediaのエチケット：連絡先かリポジトリURLを入れる
+    s.headers.update({"User-Agent": "it-terms-harvester/0.1 (+https://github.com/<YOUR_USER>/<YOUR_REPO>)"})
+    retry = Retry(
+        total=5,
+        backoff_factor=1.2,                   # 429/5xxで指数バックオフ
+        status_forcelist=[429, 500, 502, 503, 504],
+        respect_retry_after_header=True,
+    )
+    s.mount("https://", HTTPAdapter(max_retries=retry))
+    return s
+
+SESSION = make_session()
+SLEEP = float(os.getenv("SLEEP", "0.8"))     # 1リクエストごと待つ（秒）
