@@ -23,17 +23,17 @@ jobs:
 
       - name: Harvest from Wikipedia
         env:
-          # ← カテゴリをまとめて指定（数字は不要）
+          # 収集カテゴリ（必要に応じて追加/編集OK）
           CATEGORIES: >-
             プログラミング言語,オペレーティングシステム,データベース,
             ソフトウェア,ハードウェア,情報セキュリティ,
             人工知能,クラウドコンピューティング,ウェブ技術,データサイエンス
-          LIMIT: "20"      # まずは20語/日で安全運転（慣れたら上げてOK）
+          LIMIT: "20"      # まずは20語/日で安全運転
           LANG: "ja"
-          SLEEP: "1.2"     # 429対策で少しゆっくり
+          SLEEP: "1.2"     # 429対策でゆっくりめ
         run: python scripts/harvest.py
 
-      # PRタイトル/メッセージ用に日付を生成
+      # PRタイトル/ブランチ名/メッセージで使う日付を生成
       - name: Set date
         id: now
         run: echo "date=$(date -u +'%Y-%m-%d')" >> $GITHUB_OUTPUT
@@ -47,6 +47,7 @@ jobs:
             自動収集の更新です（UTC）。
             日付=${{ steps.now.outputs.date }}
             カテゴリ=${{ env.CATEGORIES }} / 上限=${{ env.LIMIT }}語
-          branch: chore/auto-harvest
+          # ← 日付ごとに別ブランチでPRを作る
+          branch: chore/auto-harvest-${{ steps.now.outputs.date }}
           delete-branch: true
           labels: auto, harvest
