@@ -23,7 +23,7 @@ jobs:
       - name: Harvest from Wikipedia
         env:
           CATEGORIES: "プログラミング言語,オペレーティングシステム,データベース"
-          LIMIT: "50"   # 1回あたり最大追加語数。最初は10〜20でもOK
+          LIMIT: "20"   # 1回あたり最大追加語数。最初は10〜20でもOK
           LANG: "ja"
         run: python scripts/harvest.py
 
