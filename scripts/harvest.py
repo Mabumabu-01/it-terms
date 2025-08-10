@@ -15,9 +15,23 @@ from urllib3.util.retry import Retry
 WORDS_PATH = "words.json"
 LIMIT_PER_RUN = int(os.getenv("LIMIT", "50"))   # 1回の最大追加語数（YAMLから上書き可）
 LANG = os.getenv("LANG", "ja")                  # 取得言語
-SLEEP = float(os.getenv("SLEEP", "0.8"))        # 1リクエストごとの待機秒
+SLEEP = float(os.getenv("SLEEP", "1.0"))        # 1リクエストごとの待機秒
 UA = "it-terms-harvester/0.1 (+https://github.com/Mabumabu-01/it-terms)"
 # ========================
+
+# タイトルで弾くパターン（百科事典の節ページ・一覧などは用語帳に不向き）
+BAD_TITLE_PATTERNS = [
+    r".+のバージョン履歴/.+",
+    r".+の一覧$",
+    r".+の歴史$",
+]
+
+# カテゴリ名→タグの簡易マップ
+CATEGORY_TAG_MAP = {
+    "プログラミング言語": ["language"],
+    "オペレーティングシステム": ["os"],
+    "データベース": ["database"],
+}
 
 def make_session() -> requests.Session:
     """Wikipedia向けにUser-Agentとリトライを設定したセッションを返す"""
@@ -47,6 +61,17 @@ def save_words(words):
 def slugify(s: str) -> str:
     return re.sub(r"[^a-z0-9一-龠ぁ-んァ-ン]+", "-", s.lower())
 
+def is_bad_title(title: str) -> bool:
+    return any(re.match(p, title) for p in BAD_TITLE_PATTERNS)
+
+def trim_definition(text: str, max_sentences: int = 2) -> str:
+    """「。」で区切って最大N文に短縮（長すぎ対策）"""
+    parts = re.split(r"。(?=\S)", text)
+    out = "。".join(parts[:max_sentences])
+    if out and not out.endswith("。"):
+        out += "。"
+    return out
+
 def fetch_category_members(category: str, cmcontinue: str | None = None):
     """カテゴリから記事タイトル一覧を取る（ゆっくり＆リトライつき）"""
     url = "https://ja.wikipedia.org/w/api.php"
@@ -54,7 +79,7 @@ def fetch_category_members(category: str, cmcontinue: str | None = None):
         "action": "query",
         "list": "categorymembers",
         "cmtitle": f"Category:{category}",
-        "cmlimit": "100",      # 取り過ぎ防止（必要なら50まで下げてもOK）
+        "cmlimit": "100",      # 取り過ぎ防止
         "format": "json",
         "formatversion": "2",
         "origin": "*",
@@ -92,12 +117,13 @@ def fetch_summary(title: str, lang: str = "ja"):
     if any(w in extract for w in bad_words):
         return None
 
+    extract = trim_definition(extract, max_sentences=2)
     time.sleep(SLEEP)  # レート制限に優しく
     return {
         "term": s.get("title") or title,
         "definition_ja": extract if lang == "ja" else "",
         "definition_en": extract if lang == "en" else "",
-        "tags": ["未分類"],   # 後で置き換え/整備
+        "tags": ["未分類"],   # 後で置き換え
         "difficulty": 1,
         "related_terms": [],
         "examples": [],
@@ -131,6 +157,9 @@ def main():
                     print(f"Reached limit ({LIMIT_PER_RUN}). Added={added}")
                     return
 
+                if is_bad_title(t):
+                    continue
+
                 sg = slugify(t)
                 if sg in have:
                     continue
@@ -138,6 +167,9 @@ def main():
                 s = fetch_summary(t, lang=LANG)
                 if not s:
                     continue
+
+                # カテゴリ由来タグを上書き（マップに無ければ未分類のまま）
+                s["tags"] = CATEGORY_TAG_MAP.get(cat, s.get("tags", ["未分類"]))
 
                 s["id"] = next_id
                 words.append(s)
