@@ -1,7 +1,7 @@
 name: harvest-terms
 on:
   schedule:
-    - cron: "0 18 * * *"   # GitHubはUTC。JST 03:00に動かすなら18:00
+    - cron: "0 18 * * *"   # GitHubはUTC。JST 03:00に実行
   workflow_dispatch: {}     # 手動実行ボタン
 
 permissions:
@@ -23,13 +23,17 @@ jobs:
 
       - name: Harvest from Wikipedia
         env:
-          CATEGORIES: "プログラミング言語,オペレーティングシステム,データベース"
-          LIMIT: "20"      # まずは20語/日で安全運転
+          # ← カテゴリをまとめて指定（数字は不要）
+          CATEGORIES: >-
+            プログラミング言語,オペレーティングシステム,データベース,
+            ソフトウェア,ハードウェア,情報セキュリティ,
+            人工知能,クラウドコンピューティング,ウェブ技術,データサイエンス
+          LIMIT: "20"      # まずは20語/日で安全運転（慣れたら上げてOK）
           LANG: "ja"
-          SLEEP: "1.0"     # 1リクエストごとの待機秒（混むなら1.2〜1.5へ）
+          SLEEP: "1.2"     # 429対策で少しゆっくり
         run: python scripts/harvest.py
 
-      # PRタイトル/メッセージで使う日付を生成
+      # PRタイトル/メッセージ用に日付を生成
       - name: Set date
         id: now
         run: echo "date=$(date -u +'%Y-%m-%d')" >> $GITHUB_OUTPUT
