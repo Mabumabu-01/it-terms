@@ -15,7 +15,7 @@ from urllib3.util.retry import Retry
 WORDS_PATH = "words.json"
 LIMIT_PER_RUN = int(os.getenv("LIMIT", "50"))   # 1回の最大追加語数（YAMLから上書き可）
 LANG = os.getenv("LANG", "ja")                  # 取得言語
-SLEEP = float(os.getenv("SLEEP", "1.0"))        # 1リクエストごとの待機秒
+SLEEP = float(os.getenv("SLEEP", "1.2"))        # 1リクエストごとの待機秒
 UA = "it-terms-harvester/0.1 (+https://github.com/Mabumabu-01/it-terms)"
 # ========================
 
@@ -26,11 +26,18 @@ BAD_TITLE_PATTERNS = [
     r".+の歴史$",
 ]
 
-# カテゴリ名→タグの簡易マップ
+# カテゴリ名→タグの簡易マップ（必要に応じて追加・調整OK）
 CATEGORY_TAG_MAP = {
     "プログラミング言語": ["language"],
     "オペレーティングシステム": ["os"],
     "データベース": ["database"],
+    "ソフトウェア": ["software"],
+    "ハードウェア": ["hardware"],
+    "情報セキュリティ": ["security"],
+    "人工知能": ["ai"],
+    "クラウドコンピューティング": ["cloud"],
+    "ウェブ技術": ["web"],
+    "データサイエンス": ["data-science"],
 }
 
 def make_session() -> requests.Session:
@@ -136,7 +143,7 @@ def fetch_summary(title: str, lang: str = "ja"):
     }
 
 def main():
-    # 例：CATEGORIES="プログラミング言語,オペレーティングシステム,データベース"
+    # 例：CATEGORIES="プログラミング言語,オペレーティングシステム,..."
     categories = [c.strip() for c in os.getenv("CATEGORIES", "").split(",") if c.strip()]
     if not categories:
         print("No CATEGORIES provided.")
@@ -172,16 +179,3 @@ def main():
                 s["tags"] = CATEGORY_TAG_MAP.get(cat, s.get("tags", ["未分類"]))
 
                 s["id"] = next_id
-                words.append(s)
-                have[sg] = True
-                next_id += 1
-                added += 1
-
-            if not cont:
-                break
-
-    save_words(words)
-    print(f"Done. Added={added}")
-
-if __name__ == "__main__":
-    main()
