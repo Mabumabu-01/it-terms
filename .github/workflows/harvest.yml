@@ -7,7 +7,7 @@ on:
 permissions:
   contents: write
   pull-requests: write
-  issues: write            # ラベル作成のため
+  issues: write
 
 jobs:
   run:
@@ -21,12 +21,12 @@ jobs:
 
       - run: pip install requests
 
-      # 1) 本日の日付と曜日を計算（PRタイトル/ブランチ用）
+      # 1) 日付作成（PRタイトル/ブランチ用）
       - name: Set date
         id: now
         run: echo "date=$(date -u +'%Y-%m-%d')" >> $GITHUB_OUTPUT
 
-      # 2) 日替わりカテゴリを決定（月=1 ... 日=7）
+      # 2) 曜日でカテゴリをローテーション
       - name: Plan categories
         id: plan
         shell: bash
@@ -38,22 +38,27 @@ jobs:
             3) cats="ハードウェア,情報セキュリティ" ;;
             4) cats="人工知能,クラウドコンピューティング" ;;
             5) cats="ウェブ技術,データサイエンス" ;;
-            6) cats="プログラミング言語,データベース,情報セキュリティ" ;;   # 週末は多め
+            6) cats="プログラミング言語,データベース,情報セキュリティ" ;;
             7) cats="人工知能,クラウドコンピューティング,ウェブ技術" ;;
           esac
           echo "categories=$cats" >> $GITHUB_OUTPUT
           echo "Using categories: $cats"
 
-      # 3) 収集を実行（429対策で少しゆっくり）
+      # 3) 収集
       - name: Harvest from Wikipedia
         env:
           CATEGORIES: ${{ steps.plan.outputs.categories }}
-          LIMIT: "40"     # まずは40語/日。429が出たら30→20へ
+          LIMIT: "40"
           LANG: "ja"
           SLEEP: "1.2"
         run: python scripts/harvest.py
 
-      # 4) Pull Request を作成（同日に複数回走っても枝番で分かれる）
+      # 4) ★ここが追加：必ず差分が出るようにログに1行追記
+      - name: Append audit log
+        run: |
+          echo "- ${{ steps.now.outputs.date }} run=${{ github.run_number }} cats='${{ steps.plan.outputs.categories }}'" >> HARVEST_LOG.md
+
+      # 5) PR作成（日付＋run番号で毎回別PR）
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v6
         with:
