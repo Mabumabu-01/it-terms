@@ -1,0 +1,40 @@
+name: harvest-terms
+on:
+  schedule:
+    - cron: "0 18 * * *"   # GitHubはUTC。JST 03:00に動かすなら18:00に設定
+  workflow_dispatch: {}     # 手動実行ボタンを出す
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - run: pip install requests
+
+      - name: Harvest from Wikipedia
+        env:
+          CATEGORIES: "プログラミング言語,オペレーティングシステム,データベース"
+          LIMIT: "50"   # 1回あたり最大追加語数。最初は10〜20でもOK
+          LANG: "ja"
+        run: python scripts/harvest.py
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v6
+        with:
+          commit-message: "harvest: update words.json ($(date -u +%F))"
+          title: "Auto-harvest: $(date -u +%F)"
+          body: |
+            自動収集の更新です。
+            カテゴリ=${{ env.CATEGORIES }} / 上限=${{ env.LIMIT }}語
+          branch: chore/auto-harvest
+          delete-branch: true
+          labels: auto, harvest
