@@ -23687,5 +23687,469 @@
         "url": "https://ja.wikipedia.org/wiki/ジャンパーピン"
       }
     ]
+  },
+  {
+    "term": "BLIS/COBOL",
+    "definition_ja": "BLIS/COBOLは、かつてのミニコンピュータ向けのオペレーティング・システムで、広く受け入れられたシステムとしては珍しくCOBOLで書かれたという特徴を持つ。COBOLで記述された企業向けアプリケーションをコンパイルするために最適化された。 BLISはデータゼネラルNovaやデータゼネラルEclipseといった16ビットミニコンシリーズで利用され、Information Processing社 (IPI) から販売された。1970年代と80年代のNational Computer Conferenceに定期的に製品を展示していた。サポートされているユーザーと機能の数に応じて、価格は830ドルから10,000ドルの間だった。 1977年、IPIは世界中で100を超えるシステムの運用インストールを誇っていた。",
+    "definition_en": "",
+    "tags": [
+      "未分類"
+    ],
+    "difficulty": 1,
+    "related_terms": [],
+    "examples": [],
+    "official_links": [
+      {
+        "title": "BLIS/COBOL - Wikipedia",
+        "url": "https://ja.wikipedia.org/wiki/BLIS%2FCOBOL"
+      }
+    ],
+    "source_urls": [
+      "https://ja.wikipedia.org/wiki/BLIS%2FCOBOL"
+    ],
+    "license": "CC BY-SA",
+    "attribution": "Wikipedia",
+    "lang": "ja",
+    "srs": {
+      "next_review": "2025-08-10",
+      "interval_days": 0,
+      "stability": 0
+    },
+    "id": 1080
+  },
+  {
+    "term": "Microsoft Windows 10のバージョン履歴/バージョン 1507",
+    "definition_ja": "Microsoft Windows 10のバージョン履歴/バージョン 1507では、Microsoft Windows 10のバージョン履歴のうち、バージョン 1507の更新履歴について記述する。",
+    "definition_en": "",
+    "tags": [
+      "未分類"
+    ],
+    "difficulty": 1,
+    "related_terms": [],
+    "examples": [],
+    "official_links": [
+      {
+        "title": "Microsoft Windows 10のバージョン履歴/バージョン 1507 - Wikipedia",
+        "url": "https://ja.wikipedia.org/wiki/Microsoft_Windows_10%E3%81%AE%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3%E5%B1%A5%E6%AD%B4%2F%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3_1507"
+      }
+    ],
+    "source_urls": [
+      "https://ja.wikipedia.org/wiki/Microsoft_Windows_10%E3%81%AE%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3%E5%B1%A5%E6%AD%B4%2F%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3_1507"
+    ],
+    "license": "CC BY-SA",
+    "attribution": "Wikipedia",
+    "lang": "ja",
+    "srs": {
+      "next_review": "2025-08-10",
+      "interval_days": 0,
+      "stability": 0
+    },
+    "id": 1081
+  },
+  {
+    "term": "Microsoft Windows 10のバージョン履歴/バージョン 1511",
+    "definition_ja": "Microsoft Windows 10のバージョン履歴/バージョン 1511では、Microsoft Windows 10のバージョン履歴のうち、バージョン 1511の更新履歴について記述する。",
+    "definition_en": "",
+    "tags": [
+      "未分類"
+    ],
+    "difficulty": 1,
+    "related_terms": [],
+    "examples": [],
+    "official_links": [
+      {
+        "title": "Microsoft Windows 10のバージョン履歴/バージョン 1511 - Wikipedia",
+        "url": "https://ja.wikipedia.org/wiki/Microsoft_Windows_10%E3%81%AE%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3%E5%B1%A5%E6%AD%B4%2F%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3_1511"
+      }
+    ],
+    "source_urls": [
+      "https://ja.wikipedia.org/wiki/Microsoft_Windows_10%E3%81%AE%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3%E5%B1%A5%E6%AD%B4%2F%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3_1511"
+    ],
+    "license": "CC BY-SA",
+    "attribution": "Wikipedia",
+    "lang": "ja",
+    "srs": {
+      "next_review": "2025-08-10",
+      "interval_days": 0,
+      "stability": 0
+    },
+    "id": 1082
+  },
+  {
+    "term": "Microsoft Windows 10のバージョン履歴/バージョン 1607",
+    "definition_ja": "Microsoft Windows 10のバージョン履歴/バージョン 1607では、Microsoft Windows 10のバージョン履歴のうち、バージョン 1607の更新履歴について記述する。",
+    "definition_en": "",
+    "tags": [
+      "未分類"
+    ],
+    "difficulty": 1,
+    "related_terms": [],
+    "examples": [],
+    "official_links": [
+      {
+        "title": "Microsoft Windows 10のバージョン履歴/バージョン 1607 - Wikipedia",
+        "url": "https://ja.wikipedia.org/wiki/Microsoft_Windows_10%E3%81%AE%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3%E5%B1%A5%E6%AD%B4%2F%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3_1607"
+      }
+    ],
+    "source_urls": [
+      "https://ja.wikipedia.org/wiki/Microsoft_Windows_10%E3%81%AE%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3%E5%B1%A5%E6%AD%B4%2F%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3_1607"
+    ],
+    "license": "CC BY-SA",
+    "attribution": "Wikipedia",
+    "lang": "ja",
+    "srs": {
+      "next_review": "2025-08-10",
+      "interval_days": 0,
+      "stability": 0
+    },
+    "id": 1083
+  },
+  {
+    "term": "Microsoft Windows 10のバージョン履歴/バージョン 1703",
+    "definition_ja": "Microsoft Windows 10のバージョン履歴/バージョン 1703では、Microsoft Windows 10のバージョン履歴のうち、バージョン 1703の更新履歴について記述する。",
+    "definition_en": "",
+    "tags": [
+      "未分類"
+    ],
+    "difficulty": 1,
+    "related_terms": [],
+    "examples": [],
+    "official_links": [
+      {
+        "title": "Microsoft Windows 10のバージョン履歴/バージョン 1703 - Wikipedia",
+        "url": "https://ja.wikipedia.org/wiki/Microsoft_Windows_10%E3%81%AE%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3%E5%B1%A5%E6%AD%B4%2F%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3_1703"
+      }
+    ],
+    "source_urls": [
+      "https://ja.wikipedia.org/wiki/Microsoft_Windows_10%E3%81%AE%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3%E5%B1%A5%E6%AD%B4%2F%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3_1703"
+    ],
+    "license": "CC BY-SA",
+    "attribution": "Wikipedia",
+    "lang": "ja",
+    "srs": {
+      "next_review": "2025-08-10",
+      "interval_days": 0,
+      "stability": 0
+    },
+    "id": 1084
+  },
+  {
+    "term": "Microsoft Windows 10のバージョン履歴/バージョン 1709",
+    "definition_ja": "Microsoft Windows 10のバージョン履歴/バージョン 1709では、Microsoft Windows 10のバージョン履歴のうち、バージョン 1709の更新履歴について記述する。",
+    "definition_en": "",
+    "tags": [
+      "未分類"
+    ],
+    "difficulty": 1,
+    "related_terms": [],
+    "examples": [],
+    "official_links": [
+      {
+        "title": "Microsoft Windows 10のバージョン履歴/バージョン 1709 - Wikipedia",
+        "url": "https://ja.wikipedia.org/wiki/Microsoft_Windows_10%E3%81%AE%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3%E5%B1%A5%E6%AD%B4%2F%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3_1709"
+      }
+    ],
+    "source_urls": [
+      "https://ja.wikipedia.org/wiki/Microsoft_Windows_10%E3%81%AE%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3%E5%B1%A5%E6%AD%B4%2F%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3_1709"
+    ],
+    "license": "CC BY-SA",
+    "attribution": "Wikipedia",
+    "lang": "ja",
+    "srs": {
+      "next_review": "2025-08-10",
+      "interval_days": 0,
+      "stability": 0
+    },
+    "id": 1085
+  },
+  {
+    "term": "Microsoft Windows 10のバージョン履歴/バージョン 1803",
+    "definition_ja": "Microsoft Windows 10のバージョン履歴/バージョン 1803では、Microsoft Windows 10のバージョン履歴のうち、バージョン 1803の更新履歴について記述する。",
+    "definition_en": "",
+    "tags": [
+      "未分類"
+    ],
+    "difficulty": 1,
+    "related_terms": [],
+    "examples": [],
+    "official_links": [
+      {
+        "title": "Microsoft Windows 10のバージョン履歴/バージョン 1803 - Wikipedia",
+        "url": "https://ja.wikipedia.org/wiki/Microsoft_Windows_10%E3%81%AE%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3%E5%B1%A5%E6%AD%B4%2F%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3_1803"
+      }
+    ],
+    "source_urls": [
+      "https://ja.wikipedia.org/wiki/Microsoft_Windows_10%E3%81%AE%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3%E5%B1%A5%E6%AD%B4%2F%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3_1803"
+    ],
+    "license": "CC BY-SA",
+    "attribution": "Wikipedia",
+    "lang": "ja",
+    "srs": {
+      "next_review": "2025-08-10",
+      "interval_days": 0,
+      "stability": 0
+    },
+    "id": 1086
+  },
+  {
+    "term": "Microsoft Windows 10のバージョン履歴/バージョン 1809",
+    "definition_ja": "Microsoft Windows 10のバージョン履歴/バージョン 1809では、Microsoft Windows 10のバージョン履歴のうち、バージョン 1809の更新履歴について記述する。",
+    "definition_en": "",
+    "tags": [
+      "未分類"
+    ],
+    "difficulty": 1,
+    "related_terms": [],
+    "examples": [],
+    "official_links": [
+      {
+        "title": "Microsoft Windows 10のバージョン履歴/バージョン 1809 - Wikipedia",
+        "url": "https://ja.wikipedia.org/wiki/Microsoft_Windows_10%E3%81%AE%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3%E5%B1%A5%E6%AD%B4%2F%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3_1809"
+      }
+    ],
+    "source_urls": [
+      "https://ja.wikipedia.org/wiki/Microsoft_Windows_10%E3%81%AE%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3%E5%B1%A5%E6%AD%B4%2F%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3_1809"
+    ],
+    "license": "CC BY-SA",
+    "attribution": "Wikipedia",
+    "lang": "ja",
+    "srs": {
+      "next_review": "2025-08-10",
+      "interval_days": 0,
+      "stability": 0
+    },
+    "id": 1087
+  },
+  {
+    "term": "Microsoft Windows 10のバージョン履歴/バージョン 1903",
+    "definition_ja": "Microsoft Windows 10のバージョン履歴/バージョン 1903では、Microsoft Windows 10のバージョン履歴のうち、バージョン 1903の更新履歴について記述する。",
+    "definition_en": "",
+    "tags": [
+      "未分類"
+    ],
+    "difficulty": 1,
+    "related_terms": [],
+    "examples": [],
+    "official_links": [
+      {
+        "title": "Microsoft Windows 10のバージョン履歴/バージョン 1903 - Wikipedia",
+        "url": "https://ja.wikipedia.org/wiki/Microsoft_Windows_10%E3%81%AE%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3%E5%B1%A5%E6%AD%B4%2F%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3_1903"
+      }
+    ],
+    "source_urls": [
+      "https://ja.wikipedia.org/wiki/Microsoft_Windows_10%E3%81%AE%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3%E5%B1%A5%E6%AD%B4%2F%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3_1903"
+    ],
+    "license": "CC BY-SA",
+    "attribution": "Wikipedia",
+    "lang": "ja",
+    "srs": {
+      "next_review": "2025-08-10",
+      "interval_days": 0,
+      "stability": 0
+    },
+    "id": 1088
+  },
+  {
+    "term": "Microsoft Windows 10のバージョン履歴/バージョン 1909",
+    "definition_ja": "Microsoft Windows 10のバージョン履歴/バージョン 1909では、Microsoft Windows 10のバージョン履歴のうち、バージョン 1909の更新履歴について記述する。",
+    "definition_en": "",
+    "tags": [
+      "未分類"
+    ],
+    "difficulty": 1,
+    "related_terms": [],
+    "examples": [],
+    "official_links": [
+      {
+        "title": "Microsoft Windows 10のバージョン履歴/バージョン 1909 - Wikipedia",
+        "url": "https://ja.wikipedia.org/wiki/Microsoft_Windows_10%E3%81%AE%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3%E5%B1%A5%E6%AD%B4%2F%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3_1909"
+      }
+    ],
+    "source_urls": [
+      "https://ja.wikipedia.org/wiki/Microsoft_Windows_10%E3%81%AE%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3%E5%B1%A5%E6%AD%B4%2F%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3_1909"
+    ],
+    "license": "CC BY-SA",
+    "attribution": "Wikipedia",
+    "lang": "ja",
+    "srs": {
+      "next_review": "2025-08-10",
+      "interval_days": 0,
+      "stability": 0
+    },
+    "id": 1089
+  },
+  {
+    "term": "Microsoft Windows 10のバージョン履歴/バージョン 2004",
+    "definition_ja": "Microsoft Windows 10のバージョン履歴/バージョン 2004では、Microsoft Windows 10のバージョン履歴のうち、バージョン 2004の更新履歴について記述する。",
+    "definition_en": "",
+    "tags": [
+      "未分類"
+    ],
+    "difficulty": 1,
+    "related_terms": [],
+    "examples": [],
+    "official_links": [
+      {
+        "title": "Microsoft Windows 10のバージョン履歴/バージョン 2004 - Wikipedia",
+        "url": "https://ja.wikipedia.org/wiki/Microsoft_Windows_10%E3%81%AE%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3%E5%B1%A5%E6%AD%B4%2F%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3_2004"
+      }
+    ],
+    "source_urls": [
+      "https://ja.wikipedia.org/wiki/Microsoft_Windows_10%E3%81%AE%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3%E5%B1%A5%E6%AD%B4%2F%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3_2004"
+    ],
+    "license": "CC BY-SA",
+    "attribution": "Wikipedia",
+    "lang": "ja",
+    "srs": {
+      "next_review": "2025-08-10",
+      "interval_days": 0,
+      "stability": 0
+    },
+    "id": 1090
+  },
+  {
+    "term": "Microsoft Windows 10のバージョン履歴/バージョン 20H2",
+    "definition_ja": "Microsoft Windows 10のバージョン履歴/バージョン 20H2では、Microsoft Windows 10のバージョン履歴のうち、バージョン 20H2の更新履歴について記述する。",
+    "definition_en": "",
+    "tags": [
+      "未分類"
+    ],
+    "difficulty": 1,
+    "related_terms": [],
+    "examples": [],
+    "official_links": [
+      {
+        "title": "Microsoft Windows 10のバージョン履歴/バージョン 20H2 - Wikipedia",
+        "url": "https://ja.wikipedia.org/wiki/Microsoft_Windows_10%E3%81%AE%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3%E5%B1%A5%E6%AD%B4%2F%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3_20H2"
+      }
+    ],
+    "source_urls": [
+      "https://ja.wikipedia.org/wiki/Microsoft_Windows_10%E3%81%AE%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3%E5%B1%A5%E6%AD%B4%2F%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3_20H2"
+    ],
+    "license": "CC BY-SA",
+    "attribution": "Wikipedia",
+    "lang": "ja",
+    "srs": {
+      "next_review": "2025-08-10",
+      "interval_days": 0,
+      "stability": 0
+    },
+    "id": 1091
+  },
+  {
+    "term": "Microsoft Windows 10のバージョン履歴/バージョン 21H1",
+    "definition_ja": "Microsoft Windows 10のバージョン履歴/バージョン 21H1では、Microsoft Windows 10のバージョン履歴のうち、バージョン 21H1の更新履歴について記述する。",
+    "definition_en": "",
+    "tags": [
+      "未分類"
+    ],
+    "difficulty": 1,
+    "related_terms": [],
+    "examples": [],
+    "official_links": [
+      {
+        "title": "Microsoft Windows 10のバージョン履歴/バージョン 21H1 - Wikipedia",
+        "url": "https://ja.wikipedia.org/wiki/Microsoft_Windows_10%E3%81%AE%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3%E5%B1%A5%E6%AD%B4%2F%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3_21H1"
+      }
+    ],
+    "source_urls": [
+      "https://ja.wikipedia.org/wiki/Microsoft_Windows_10%E3%81%AE%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3%E5%B1%A5%E6%AD%B4%2F%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3_21H1"
+    ],
+    "license": "CC BY-SA",
+    "attribution": "Wikipedia",
+    "lang": "ja",
+    "srs": {
+      "next_review": "2025-08-10",
+      "interval_days": 0,
+      "stability": 0
+    },
+    "id": 1092
+  },
+  {
+    "term": "Microsoft Windows 10のバージョン履歴/バージョン 21H2",
+    "definition_ja": "Microsoft Windows 10のバージョン履歴/バージョン 21H2では、Microsoft Windows 10のバージョン履歴のうち、バージョン 21H2の更新履歴について記述する。",
+    "definition_en": "",
+    "tags": [
+      "未分類"
+    ],
+    "difficulty": 1,
+    "related_terms": [],
+    "examples": [],
+    "official_links": [
+      {
+        "title": "Microsoft Windows 10のバージョン履歴/バージョン 21H2 - Wikipedia",
+        "url": "https://ja.wikipedia.org/wiki/Microsoft_Windows_10%E3%81%AE%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3%E5%B1%A5%E6%AD%B4%2F%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3_21H2"
+      }
+    ],
+    "source_urls": [
+      "https://ja.wikipedia.org/wiki/Microsoft_Windows_10%E3%81%AE%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3%E5%B1%A5%E6%AD%B4%2F%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3_21H2"
+    ],
+    "license": "CC BY-SA",
+    "attribution": "Wikipedia",
+    "lang": "ja",
+    "srs": {
+      "next_review": "2025-08-10",
+      "interval_days": 0,
+      "stability": 0
+    },
+    "id": 1093
+  },
+  {
+    "term": "Microsoft Windows 10のバージョン履歴/バージョン 22H2",
+    "definition_ja": "Microsoft Windows 10のバージョン履歴/バージョン 22H2では、Microsoft Windows 10のバージョン履歴のうち、バージョン 22H2の更新履歴について記述する。",
+    "definition_en": "",
+    "tags": [
+      "未分類"
+    ],
+    "difficulty": 1,
+    "related_terms": [],
+    "examples": [],
+    "official_links": [
+      {
+        "title": "Microsoft Windows 10のバージョン履歴/バージョン 22H2 - Wikipedia",
+        "url": "https://ja.wikipedia.org/wiki/Microsoft_Windows_10%E3%81%AE%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3%E5%B1%A5%E6%AD%B4%2F%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3_22H2"
+      }
+    ],
+    "source_urls": [
+      "https://ja.wikipedia.org/wiki/Microsoft_Windows_10%E3%81%AE%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3%E5%B1%A5%E6%AD%B4%2F%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3_22H2"
+    ],
+    "license": "CC BY-SA",
+    "attribution": "Wikipedia",
+    "lang": "ja",
+    "srs": {
+      "next_review": "2025-08-10",
+      "interval_days": 0,
+      "stability": 0
+    },
+    "id": 1094
+  },
+  {
+    "term": "Extract/Transform/Load",
+    "definition_ja": "Extract/Transform/Load とは、以下のようなデータフローを指す。Extract - 情報源からデータを抽出\nTransform - 抽出したデータをビジネスでの必要に応じて変換・加工\nLoad - 変換・加工済みのデータをターゲットシステムやファイルとしてロード",
+    "definition_en": "",
+    "tags": [
+      "未分類"
+    ],
+    "difficulty": 1,
+    "related_terms": [],
+    "examples": [],
+    "official_links": [
+      {
+        "title": "Extract/Transform/Load - Wikipedia",
+        "url": "https://ja.wikipedia.org/wiki/Extract%2FTransform%2FLoad"
+      }
+    ],
+    "source_urls": [
+      "https://ja.wikipedia.org/wiki/Extract%2FTransform%2FLoad"
+    ],
+    "license": "CC BY-SA",
+    "attribution": "Wikipedia",
+    "lang": "ja",
+    "srs": {
+      "next_review": "2025-08-10",
+      "interval_days": 0,
+      "stability": 0
+    },
+    "id": 1095
   }
 ]
